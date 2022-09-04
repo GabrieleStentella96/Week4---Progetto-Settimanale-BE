@@ -16,7 +16,7 @@ import io.swagger.v3.oas.annotations.parameters.RequestBody;
 	@RequestMapping("/utenti")
 	public class UserController {
 		@Autowired
-		private UtenteService repo;
+		private UserService repo;
 		
 		@GetMapping("/{id}")
 		public void getPrenotazioneById(@PathVariable Long id){
